@@ -24,7 +24,6 @@ body {
 .menu-mobile {
   width: 40px;
   height: 25px;
-  
 }
 .menu-desktop {
   display: none;
@@ -77,11 +76,18 @@ h2 {
   border-radius: 30px;
   align-items: center;
   margin: 50px;
-
+}
+.card:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 2px solid rgb(234, 113, 113);
 }
 .card img {
   width: 100%;
-  height:180px;
+  height: 180px;
   border-radius: 30px;
 }
 .card h3 {
@@ -93,32 +99,61 @@ h2 {
   text-align: center;
   color: rgb(2, 48, 48);
 }
-.card .botao {
+.botao {
   width: 130px;
   height: 40px;
   background-color: rgb(213, 50, 50);
   border-radius: 40px;
+  cursor: pointer;
   margin-top: 15px;
-
+  border: 2px solid #b5b3b3;
 }
-
-.botao p {
+.botao a {
+  text-decoration: none;
   color: white;
 }
-.botao a{
-  text-decoration:none;
+
+.botao span {
+  position: relative;
+  transition: 0.5s;
 }
-.nos h2{
+
+.botao span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botao:hover span {
+  padding-right: 25px;
+}
+
+.botao:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.nos2 h2 {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 30px;
   color: rgb(235, 39, 39);
 }
-.nos p{
-  text-align: center;
+.nos p {
+  text-align: left;
   margin-left: 30px;
   margin-right: 30px;
+}
+.mapa {
+  width: 450px;
+  height: 300px;
+}
+.mapa img {
+  width: 100%;
+  height: 300px;
 }
 @media (min-width: 768px) {
   .menu-mobile {
@@ -129,17 +164,35 @@ h2 {
     display: flex;
     justify-content: space-between;
     color: rgb(141, 5, 5);
-
   }
-.menu-desktop li a{
-  text-decoration:none;
-  color: inherit;
-}
+  .menu-desktop li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .menu-desktop li:hover {
+    border-radius: 4px;
+    background-color: rgb(246, 201, 201);
+  }
   .cards-cidades {
-      display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+  }
+  .nos {
+    display: flex;
+  }
+  .nos p {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .mapa {
+    width: 650px;
+    height: 500px;
+  }
+  .mapa img {
+    width: 650px;
+    height: 500px;
   }
 }
