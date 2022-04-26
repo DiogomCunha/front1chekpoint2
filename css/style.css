@@ -6,13 +6,12 @@
   list-style: none;
 }
 @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
-body {
- background-image: url(../img/body.jpg);
- background-repeat: no-repeat;
+body{
+  background-color: rgb(225, 238, 233);
 }
 .cabecalho {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 80px;
   background-color: white;
@@ -31,8 +30,11 @@ body {
 }
 .banner {
   width: 100%;
-  height: 450px;
-  box-shadow: 10px 1px 1px rgb(248, 246, 246);
+  height: 620px;
+  background-image: url(../img/baner2.jpg);
+  background-position: center;
+  border-radius: 10px;
+  
 }
 .conteudo-banner {
   width: 100%;
@@ -46,7 +48,8 @@ body {
   width: 180px;
   border-radius: 15px;
 }
-.conteudo-banner p {
+
+.logo-marca {
   color: rgb(82, 16, 10);
   font-size: xx-large;
   margin-top: 15px;
@@ -54,33 +57,37 @@ body {
 .cidades {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 30px;
-  color: rgb(235, 39, 39);
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 1px 5px rgb(125, 125, 125);
+  margin-top: 30px;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  
 }
 h2 {
   font-family: "Square Peg", cursive;
   font-size: 40px;
-}
-.linha{
-  box-shadow: 10px 1px 1px rgb(248, 247, 247);
 }
 .cards-cidades {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 60px;
 }
 .card {
   display: flex;
   flex-direction: column;
   box-shadow: 3px 3px 3px 3px rgb(125, 125, 125);
-  width: 250px;
+  width: 350px;
   height: 350px;
   border-radius: 30px;
   align-items: center;
   margin: 50px;
-  background-color: rgb(229, 235, 233);
+  background-color: white;
 }
 .card:hover {
   -webkit-transform: scale(1.1);
@@ -140,18 +147,22 @@ h2 {
   opacity: 1;
   right: 0;
 }
-.nos2 h2 {
+.nos2 {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 30px;
-  color: rgb(235, 39, 39);
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 1px 5px rgb(125, 125, 125);
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 30px;
 }
 .nos p {
   text-align: left;
   margin-left: 30px;
   margin-right: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .mapa {
   width: 450px;
