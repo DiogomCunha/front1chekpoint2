@@ -100,7 +100,7 @@ h2 {
 .card img {
   width: 100%;
   height: 180px;
-  border-radius: 30px;
+  border-radius: 30px 30px 0px 0px;
 }
 .card h3 {
   margin-top: 10px;
@@ -247,3 +247,63 @@ h2 {
 }
 
 }
+
+.login-form {
+display: flex;
+padding: 185px;
+justify-content: center;
+}
+
+.card-login {
+  box-shadow: 1px 1px 5px #ccc;
+  background-color: rgba(255, 255, 255, 0.418);
+  width: 500px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.card-login-info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px 0px 50px;
+}
+
+.card-login-info > label {
+  width: 100%;
+  color: black;
+  display: block;
+  padding: 5px 5px 0px 0px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: rgb(82, 16, 10)
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #d53232;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 2px solid #b5b3b3;
+}
+
+.input {
+  border-radius: 5px;
+  height: 25px;
+}
+
