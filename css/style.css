@@ -334,7 +334,6 @@ button {
 .video-cidade {
   display: flex;
   justify-content: center;
-  margin: 50px;
   width: 100%;
   height: 600px;
 }
